@@ -32,18 +32,22 @@ public class Mover : MonoBehaviour
     {
         thisMesh = GetComponent<NavMeshAgent>();
 
-        playerController.Click_Controller.Click.performed += _ => SelectClickedTarget();
+        playerController.Click_Controller.SelectDestination.performed += _ => SelectClickedTarget();
     }
 
     void Update()
     {
-        thisMesh.destination = target.position;
-
         Debug.DrawRay(lastRay.origin, lastRay.direction * 100);
     }
 
     private void SelectClickedTarget()
     {
         lastRay = Camera.main.ScreenPointToRay(playerController.Click_Controller.Mouse_Position.ReadValue<Vector2>());
+        RaycastHit hitInfo;
+
+        if(Physics.Raycast(lastRay, out hitInfo))
+        {
+            thisMesh.destination = hitInfo.point;
+        }
     }
 }

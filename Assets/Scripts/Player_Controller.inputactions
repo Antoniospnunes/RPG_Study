@@ -6,7 +6,7 @@
             "id": "69c785ff-dfe9-49b0-b2f9-53971edc9693",
             "actions": [
                 {
-                    "name": "Click",
+                    "name": "SelectDestination",
                     "type": "Button",
                     "id": "06dca2b4-cb7d-4c65-a0e0-2af622fc78b4",
                     "expectedControlType": "Button",
@@ -20,6 +20,22 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "CameraControl",
+                    "type": "Button",
+                    "id": "2ce2f147-af54-4ad7-8a97-8d34d58e82e8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "CameraZoom",
+                    "type": "Value",
+                    "id": "aa62bb83-71b8-4734-9f5f-246584c3d7ef",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -30,7 +46,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Click",
+                    "action": "SelectDestination",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -42,6 +58,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Mouse_Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5b8bde2e-8139-4cec-ab74-94a0264d1c1c",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraControl",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "21c47ee0-052d-4d19-a118-08e0e1e0941f",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraZoom",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
