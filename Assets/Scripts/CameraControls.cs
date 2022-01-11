@@ -68,10 +68,10 @@ public class CameraControls : MonoBehaviour
                 cameraController.m_Orbits[0].m_Height -= 1f;
                 cameraController.m_Orbits[1].m_Radius -= 1f;
                 cameraController.m_Orbits[2].m_Radius -= 1f;
-                if(cameraCollider.m_MinimumDistanceFromTarget > 5)
+                /*if(cameraCollider.m_MinimumDistanceFromTarget > 5)
                 {
                     cameraCollider.m_MinimumDistanceFromTarget -= 1;
-                }
+                }*/
             }
         }
         else if (playerController.Click_Controller.CameraZoom.ReadValue<Vector2>().y < 0)
@@ -81,10 +81,10 @@ public class CameraControls : MonoBehaviour
                 cameraController.m_Orbits[0].m_Height += 1f;
                 cameraController.m_Orbits[1].m_Radius += 1f;
                 cameraController.m_Orbits[2].m_Radius += 1;
-                if (cameraCollider.m_MinimumDistanceFromTarget < 15)
+                /*if (cameraCollider.m_MinimumDistanceFromTarget < 15)
                 {
                     cameraCollider.m_MinimumDistanceFromTarget += 1;
-                }
+                }*/
             }
         }
     }
