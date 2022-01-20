@@ -63,7 +63,7 @@ public class CameraControls : MonoBehaviour
     {
         if (playerController.Click_Controller.CameraZoom.ReadValue<Vector2>().y > 0)
         {
-            if (cameraController.m_Orbits[1].m_Radius > 12)
+            if (cameraController.m_Orbits[1].m_Radius > 10)
             {
                 cameraController.m_Orbits[0].m_Height -= 1f;
                 cameraController.m_Orbits[1].m_Radius -= 1f;

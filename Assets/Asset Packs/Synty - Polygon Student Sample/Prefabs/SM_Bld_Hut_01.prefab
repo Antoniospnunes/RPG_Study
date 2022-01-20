@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 409538}
   - component: {fileID: 3365224}
   - component: {fileID: 2323046}
-  - component: {fileID: 8377039808843746064}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SM_Bld_Hut_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &409538
 Transform:
@@ -82,16 +81,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8377039808843746064
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196646}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5, y: 5.3980865, z: 6}
-  m_Center: {x: 0.00000071525574, y: 2.6990433, z: 0}
